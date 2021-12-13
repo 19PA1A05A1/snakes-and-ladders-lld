@@ -1,14 +1,10 @@
 import java.util.Random;
 
-public class PairDice implements Dice{
-    Random r;
+public class PairDice extends Dice{
     public PairDice(){
-         r = new Random();
+        r = new Random();
     }
     public int rollDice(){
         return r.nextInt(11)+2;
-    }
-    public int getMinRollVal(){
-        return 2;
     }
 }
